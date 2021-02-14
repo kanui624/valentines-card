@@ -76,7 +76,7 @@ const About: FC = () => {
     setDisabled(true);
     setTimeout(() => {
       setDisabled(false);
-    }, 1300);
+    }, 1500);
   };
 
   useEffect(() => {
@@ -88,7 +88,7 @@ const About: FC = () => {
   }, [transition]);
 
   useEffect(() => {
-    if (pageCount === 8) {
+    if (pageCount === 20) {
       removeNav('.booknavforward');
     } else {
       addNav('.booknavforward');
@@ -110,14 +110,14 @@ const About: FC = () => {
         className="booknavs booknavforward fixed opacity-0"
         onClick={(e) => handleNav(e, true)}
       >
-        <img src="/3-svgs/about/book-nav.svg" alt="book-nav-forward" />
+        <img src="/2-svgs/0-story/heart-nav.svg" alt="book-nav-forward" />
       </button>
       <button
         disabled={disabled}
         className="booknavs booknavbackward fixed opacity-0"
         onClick={(e) => handleNav(e, false)}
       >
-        <img src="/3-svgs/about/book-nav.svg" alt="book-nav-backward" />
+        <img src="/2-svgs/0-story/heart-nav.svg" alt="book-nav-backward" />
       </button>
     </Fragment>
   );

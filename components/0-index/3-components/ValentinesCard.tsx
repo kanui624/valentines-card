@@ -10,7 +10,6 @@ import HTMLFlipBook from 'react-pageflip';
 
 // Data
 import { cardMobileData } from '../1-data/CardMobileData';
-import { cardLargeDeviceData } from '../1-data/CardLargeDeviceData';
 
 // React Types
 import { FC } from 'react';
@@ -24,7 +23,6 @@ interface ValentinesCardProps {
 }
 
 const ValentinesCard: FC<ValentinesCardProps> = forwardRef(({ width }, ref) => {
-  const dataToMap = width >= 540 ? cardLargeDeviceData : cardMobileData;
   return (
     <HTMLFlipBook
       ref={ref}
@@ -42,37 +40,39 @@ const ValentinesCard: FC<ValentinesCardProps> = forwardRef(({ width }, ref) => {
       maxWidth={1000}
       maxHeight={1337}
     >
-      {dataToMap.map(({ id, texta, textb, svg, link }: AboutBookDataProps) => {
-        return (
-          <div
-            key={id}
-            className={`aboutpage inset-0 h-full max-w-full text-center `}
-          >
-            <div className="flex justify-center items-center h-full flex-col">
-              {texta && (
-                <div className={`page${id}texta abouttext px-8 py-8`}>
-                  {texta}{' '}
-                  {link && (
-                    <Link href={`/baklavegan/${link}`}>
-                      <a className="aboutbooklink">
-                        <u>{link}</u>
-                      </a>
-                    </Link>
-                  )}{' '}
-                  {textb && textb}
-                </div>
-              )}
-              {svg && (
-                <img
-                  className={`svg${id} aboutsvg opacity-90`}
-                  src={`/3-svgs/about/${svg}.svg`}
-                  alt={svg}
-                />
-              )}
+      {cardMobileData.map(
+        ({ id, texta, textb, svg, link }: AboutBookDataProps) => {
+          return (
+            <div
+              key={id}
+              className={`aboutpage inset-0 h-full max-w-full text-center `}
+            >
+              <div className="flex justify-center items-center h-full flex-col">
+                {texta && (
+                  <div className={`page${id}texta abouttext px-8 py-8`}>
+                    {texta}{' '}
+                    {link && (
+                      <Link href={`/baklavegan/${link}`}>
+                        <a className="aboutbooklink">
+                          <u>{link}</u>
+                        </a>
+                      </Link>
+                    )}{' '}
+                    {textb && textb}
+                  </div>
+                )}
+                {svg && (
+                  <img
+                    className={`svg${id} aboutsvg opacity-90`}
+                    src={`/2-svgs/0-story/${svg}.svg`}
+                    alt={svg}
+                  />
+                )}
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        }
+      )}
     </HTMLFlipBook>
   );
 });

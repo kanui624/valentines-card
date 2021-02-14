@@ -2,63 +2,109 @@ export const cardMobileData: any = [
   { id: 0 },
   {
     id: 1,
-    texta: 'baklavegan',
-    svg: 'origin-story',
+    texta: 'i love...',
   },
   { id: 2 },
   {
     id: 3,
-    texta:
-      'One day this really cool Turkish girl decided she wanted to go visit America',
-    svg: 'visit-america',
+    texta: 'i love watching movies with you',
   },
   { id: 4 },
   {
     id: 5,
-    texta:
-      'So she packed her bags and bought a plane ticket from Istanbul to Austin, Texas',
-    svg: 'leave-turkey',
+    texta: 'i love your laugh',
   },
   { id: 6 },
   {
     id: 7,
-    texta:
-      'when she got there she met this really cool skater dude and they became friends :)',
-    svg: 'meet-skater',
+    texta: 'i love thinking about our future together',
   },
   { id: 8 },
   {
     id: 9,
     texta:
-      'They soon found they had a lot in common, like their love for animals...',
-    svg: 'love-animals',
+      'i love when you mess with my back, but only because you like it, i think it’s ew',
   },
   { id: 10 },
   {
     id: 11,
-    texta: '...and passion for making food!',
-    svg: 'love-baking',
+    texta: 'i love when you get impatient with me in the kitchen',
   },
   { id: 12 },
   {
     id: 13,
-    texta: 'Then one day they had this really cool idea!',
-    svg: 'the-idea',
+    texta: 'i love when you say “mother fucker”',
   },
   { id: 14 },
   {
     id: 15,
-    texta: 'And the rest is History!',
-    svg: 'now-open',
+    texta: 'i love how lil you are',
   },
   { id: 16 },
   {
     id: 17,
+    texta: 'i love how you’re responsible, thoughtful, and clean',
+  },
+  { id: 18 },
+  {
+    id: 19,
+    texta: 'i love when you tell me all about a movie you just watched',
+  },
+  { id: 20 },
+  {
+    id: 21,
+    texta: 'i love when you mess up your english',
+  },
+  { id: 22 },
+  {
+    id: 23,
+    texta: 'i love playing with your hair until you fall asleep',
+  },
+  { id: 24 },
+  {
+    id: 25,
+    texta: 'i love how you always think about everything',
+  },
+  { id: 26 },
+  {
+    id: 27,
+    texta: 'i love how i’ve learned so much from you',
+  },
+  { id: 28 },
+  {
+    id: 29,
+    texta: 'i love how i’ve become closer to my family because of you',
+  },
+  { id: 30 },
+  {
+    id: 31,
     texta:
-      "simply put, we just wanna make desserts, spread good vibes, and speak up for our animal friends we share this world with. If you'd like learn more about how we allocate sales profits, check out our",
-
-    link: 'finance',
-    textb:
-      'page. We strive to be what we want to see more of in the world so transparency and compassion are above all else :)',
+      'i love going to your place cause that’s where i feel the most comfortable',
+  },
+  { id: 32 },
+  {
+    id: 33,
+    texta: 'i love making love to you',
+  },
+  { id: 34 },
+  {
+    id: 35,
+    texta: 'i love spending this life of mine with you',
+  },
+  { id: 36 },
+  {
+    id: 37,
+    texta: 'i love you lil one',
+  },
+  { id: 38 },
+  {
+    id: 39,
+    svg: 'this-much',
+  },
+  { id: 40 },
+  {
+    id: 41,
+    texta: 'happy valentines day my baby',
+    svg: 'heart-nav',
   },
 ];
