@@ -23,7 +23,7 @@ export const cardMobileData: any = [
   {
     id: 9,
     texta:
-      'i love when you mess with my back, but only because you like it, i think it’s ew',
+      'i love when you pop pimples on my back, but only because you like it, i think it’s ew',
   },
   { id: 10 },
   {
