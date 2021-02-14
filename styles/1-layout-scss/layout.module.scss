@@ -1,0 +1,11 @@
+.canvascontainer {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.canvasbackground {
+  background: url('/2-images/0-global/canvas-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: none;
+}
